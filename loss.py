@@ -14,13 +14,3 @@ class DiceLoss(nn.Module):
         intersection = (predictions * targets).sum()
         dice = (2. * intersection + self.smooth) / (predictions.sum() + targets.sum() + self.smooth)
         return 1 - dice
-
-class MyLoss(nn.Module):
-    def __init__(self):
-        super(MyLoss, self).__init__()
-        self.dice_loss = DiceLoss()
-        self.mse = nn.MSELoss()
-        
-    def forward(self, predictions, targets):
-        mse = self.mse(predictions, targets)
-        return  mse

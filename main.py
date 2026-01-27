@@ -3,7 +3,7 @@ from torch import optim
 from torch.utils.data import random_split
 from models import MyUNet
 from datasets import MyDataset
-from loss import MyLoss
+from loss import DiceLoss
 from trainer import train
 from metrics import calculate_dice_score
 import json
