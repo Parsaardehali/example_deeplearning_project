@@ -1,5 +1,6 @@
 # %%
 import math
+import os
 import numpy as np
 def create_star_mask(height, width, center_x=None, center_y=None, outer_radius=None, inner_radius=None, num_points=5):
         """
@@ -123,6 +124,7 @@ def create_synthetic_image(img_size=64):
     return input_img, target_img
 
 def simulate_dataset(num_samples, img_size, root_dir):
+     os.makedirs(root_dir, exist_ok=True)
      for i in range(num_samples):
         input_img, target_mask = create_synthetic_image(img_size)
         np.savez_compressed(f"{root_dir}/sample_{i:d}.npy", input=input_img, target=target_mask)

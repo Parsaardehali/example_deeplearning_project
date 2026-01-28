@@ -35,7 +35,7 @@ python Simulator.py
 
 Preprocessing and splitting data into _train_ an _test_ sets is done by
 ```bash
-python prepocess_split.py
+python preprocess_split.py
 ```
 > Adjust the split ratio of test data (test_size) in the script to what you need. Default is 0.2.
 
@@ -50,7 +50,7 @@ To train the model make sure your environment is activated by running
 ```bash
 source venv/bin/activate
 ```
-And to run the training run ```python main.py configs/config_file.json```.
+And to run the training run ```python main.py --configconfigs/config_file.json```.
 You can edit the config file to adjust the hyperparameters and paths for training and test datasets.
 
 **Play around with loss function, for example using MSE loss instead of Dice loss.
