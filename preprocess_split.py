@@ -25,11 +25,12 @@ def split_dataset(file_list, train_path, test_path, test_size, random_state=42):
     return train_files, test_files
 
 if __name__ == "__main__":
-    data_dir = "./data/all"
-    train_path = "./data/train"
-    test_path = "./data/test"
+    data_dir = "./data/all" # Directory containing all data files
+    train_path = "./data/train" # Directory to save training files
+    test_path = "./data/test"   # Directory to save testing files
+    test_size = 0.2 # splits data into 80% train and 20% test
     file_list = get_file_list(data_dir)
     print(f"found {len(file_list)} files.")
-    train_files, test_files = split_dataset(file_list, train_path, test_path, test_size=0.2)
+    train_files, test_files = split_dataset(file_list, train_path, test_path, test_size=test_size)
     print(f"Training files: {len(train_files)}, Testing files: {len(test_files)}")
 # %%
