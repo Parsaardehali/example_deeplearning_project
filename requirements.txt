@@ -1,0 +1,15 @@
+# Requirements for example_project
+
+# Deep Learning
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0,<1.0.0
+
+# Data Handling
+numpy
+scikit-learn==1.7.0
+
+# Visualization
+matplotlib==3.10.1
+
+# Experiment Tracking
+wandb==0.20.1
