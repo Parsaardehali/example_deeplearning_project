@@ -1,13 +1,9 @@
 # %%
 import torch
-import math
 from torch.utils.data import Dataset
-from torchvision.transforms import functional as F
-from torchvision.transforms import v2
 import numpy as np
 from glob import glob
 import os
-import h5py
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class MyDataset(Dataset):
