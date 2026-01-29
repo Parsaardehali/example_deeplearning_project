@@ -50,7 +50,7 @@ To train the model make sure your environment is activated by running
 ```bash
 source venv/bin/activate
 ```
-And to run the training run ```python main.py --configconfigs/config_file.json```.
+And to run the training run ```python main.py --config configs/config_file.json```.
 You can edit the config file to adjust the hyperparameters and paths for training and test datasets.
 
 > To set up weights and biases (wandb) check this setup [link](https://docs.wandb.ai/models/quickstart)

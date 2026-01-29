@@ -12,5 +12,5 @@ scikit-learn==1.7.0
 matplotlib==3.10.1
 
 # Experiment Tracking
-tqdm == 4.67.1
+tqdm ==4.67.1
 wandb==0.20.1
