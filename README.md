@@ -53,6 +53,7 @@ source venv/bin/activate
 And to run the training run ```python main.py --configconfigs/config_file.json```.
 You can edit the config file to adjust the hyperparameters and paths for training and test datasets.
 
+> To set up weights and biases (wandb) check this setup [link](https://docs.wandb.ai/models/quickstart)
 **Play around with loss function, for example using MSE loss instead of Dice loss.
 You can also try different architectures and optimizers.**
 
@@ -61,3 +62,6 @@ You can also try different architectures and optimizers.**
 If you have any suggestions or find any bugs, please create an issue or a pull request.
 
 
+## Acknowledgements
+- This repo is highly inspired by [Simple-UNet](https://github.com/aymuos15/Simple-UNet) repo that uses only pytorch.
+-Thanks to Prof. Michael Habeck for motivating me and providing feedback and suggestions.
